@@ -6,7 +6,7 @@ body, h1, h2, p, ul {
 
 /* Global styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
@@ -24,15 +24,12 @@ header {
     color: #fff;
     width: 100%;
     padding: 10px 0;
+    font-size: 50px;
 }
 
 header .logo {
     margin: 10 auto; /* Center the logo horizontally */
-    
-
-    
 }
-
 
 nav ul {
     list-style: none;
@@ -62,14 +59,18 @@ main {
 }
 
 aside.sidebar {
-    background-color: #d22020;
+    flex-wrap: wrap;
+    background-image: url(images/color\ bricks.jpg);
+    font-weight: 100;
+    font-size: 30px;
     color: #fff;
     padding: 50px;
-    min-width: 200px;
+    min-width: 60%;
     height: 100%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: #333 3px 3px;
-    border-radius: 30px;
+    text-shadow: #070707 7px 7px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Helvetica, Arial, Helvetica, sans-serif;
 }
 
 .sidebar ul {
@@ -95,6 +96,8 @@ aside.sidebar {
 .about-content {
     flex: 1;
     margin-right: 20px;
+    color: #fff;
+    flex-wrap: wrap;
 }
 
 .about-image {
@@ -106,12 +109,9 @@ aside.sidebar {
     max-width: 100%;
 }
 
-/* Other section styles */
-/* Add your styles for Experience, Education, Skills, and Contact sections here */
-
 /* Footer styles */
-footer {
-    background-color: #333;
+/* footer {
+    background-image: url(images/contactus.jpg);
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -120,8 +120,121 @@ footer {
     bottom: 0;
     width: 100%;
     height: 2.5rem;
+} */
+
+.image-resize {
+    width: 25px;
+    height: 25px;
 }
-.image-resize{
-        width: 25px;
-        height: 25px;
+
+.Chris {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.section {
+    display: flexbox 1;
+}
+
+section ul li{
+    flex-wrap: wrap;
+}
+
+body{
+    margin:0;
+    overflow-x:hidden;
     }
+    
+    /* .footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    } */
+
+    /* Footer styles */
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+
+}
+
+footer section h1{
+    color: red;
+}
+
+
+/* Add margin to space the icons evenly */
+/* Style your social media icons (adjust as needed) */
+.footer-social-icons a {
+    text-decoration: none;
+    color: gray;
+    font-size: 2em;
+    margin: 0 20px; /* Adjust this value to control the spacing between icons */
+}
+
+/* Hover effect (adjust as needed) */
+.footer-social-icons a:hover {
+    color: #fff;
+}
