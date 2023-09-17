@@ -27,6 +27,7 @@ header {
     background-image: url(images/nasa-Q1p7bh3SHj8-unsplash.jpg); /* Correct the image path */
     background-size: cover;
     flex-wrap: wrap;
+
     
 }
 
@@ -69,21 +70,22 @@ main {
 }
 
 aside.sidebar {
-    flex-wrap: wrap;
-    background-color: rgb(0, 213, 255);
-    border-radius: 100%;
+    background-color: rgb(78, 171, 217);
+    border-radius: 90px;
     /* background-image: url(images/color\ bricks.jpg); */
     font-weight: 100;
     font-size: 30px;
     color: #fff;
-    padding: 50px;
-    min-width: 60%;
-    height: 100%;
-    text-shadow: #070707 3px 3px;
+    padding: 30px;
+    min-width: 30%;
+    height: 30px;
+    text-shadow: #070707 4px 4px;
     text-align: center;
     font-weight: bold;
     font-family: Helvetica, Arial, Helvetica, sans-serif;
     margin-bottom: 25px;
+    display: inline;
+    flex-wrap: inherit;
 }
 
 .sidebar ul {
@@ -95,10 +97,10 @@ aside.sidebar {
     margin-bottom: 10px;
 }
     /* Look here to see all boxes */
-section, div{
+/* section, div{
     border: solid;
     border-color: #fff;
-}
+} */
 
 .about-content p{
     /* border: dashed; */
@@ -169,7 +171,9 @@ body{
 footer,#footer-contact,.footer,.row{
     background-color: #000007;
     width: 100%;
+    
 }
+
 
 
 footer {
@@ -183,7 +187,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 
 .footer .row{
@@ -245,8 +250,8 @@ footer section h1{
 .footer-social-icons a {
     text-decoration: none;
     color: gray;
-    font-size: 2em;
-    margin: -20px 20px; /* Adjust this value to control the spacing between icons */
+    font-size: 1em;
+    margin: 30px 35px; /* Adjust this value to control the spacing between icons */
 }
 
 
