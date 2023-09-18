@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(images/1_icon_olympus_multi-purpose_isru-based_lunarconstructionsystem_concept-render_nov2022_for_icon_release.jpg);
+    background-image: url(images/photo-1531297484001-80022131f5a1.avif);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -70,7 +70,7 @@ main {
 }
 
 aside.sidebar {
-    background-color: rgb(78, 171, 217);
+    background-color: rgb(217, 78, 78);
     border-radius: 90px;
     /* background-image: url(images/color\ bricks.jpg); */
     font-weight: 100;
@@ -105,28 +105,35 @@ aside.sidebar {
 .about-content p{
     /* border: dashed; */
     color: white;
-    display: inline;
-    text-wrap: wrap;
+    /* display: inline; */
+    /* text-wrap: wrap; */
+    margin-left: 100px;
     
     
 }
 
 .about-content h1,h2{
-    display: inline;
+    /* display: inline; */
     color: white;
     font-size: 300%;
-    text-wrap: 100%;
+    /* text-wrap: 100%; */
     margin-top: 100px;
     padding-bottom: 45px;
     padding-right: 0px; /* Increase this value to move the border away from the text */
-    float: left;
+    /* float: left; */
+}
+.about-content{
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
 .about-content h1{
     display: inline;
+    border-right: solid 2px;
 }
 .about-content h2{
-    border-right: solid 2px;
+    
     padding-top: 50px;
     float: left;
     padding-right: 10px;
