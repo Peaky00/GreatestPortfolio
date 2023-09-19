@@ -1,8 +1,15 @@
 /* Reset some default styles */
-body, h1, h2, p, ul {
+ *{
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
-}
+} */
 
 /* Global font styles */
 body {
@@ -12,36 +19,31 @@ body {
     line-height: 1.6;
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-image: url(images/photo-1531297484001-80022131f5a1.avif);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 /* Header styles */
 header {
     background-color: #000007;
     color: #fff;
-    text-align: center; /* Center-align header content */
-    padding: 50px 150px 100px 200px; /* Adjust top and bottom padding for spacing */
-    background-image: url(images/nasa-Q1p7bh3SHj8-unsplash.jpg); /* Correct the image path */
+    text-align: center;
+    padding: 0 0;
     background-size: cover;
     flex-wrap: wrap;
-
-    
+    margin: 0 0;
+    font-size: 50%;
+    word-spacing: 30px;
+    height: 100px;
+    flex-direction: column;
 }
 
-/* Header title styles */
-.title {
-    font-size: 2em; /* Adjust the font size as needed */
-    margin-top: 20px; /* Adjust the top margin for spacing */
-   
+#chris{
+    font-size: 50px;
 }
 
-/* Navigation styles */
-nav ul {
-    list-style: none;
-}
 
 nav ul li {
     display: inline;
@@ -55,215 +57,325 @@ nav ul li:last-child {
 /* Navigation link styles */
 a {
     text-decoration: none;
-    color: #fff;
-    font-weight: bold; /* Add font weight for emphasis */
+    color: #0000EE;;
+    font-weight: bold;
 }
 
 /* Main content styles */
 main {
-    padding: 20px;
-    flex: 1;
+    padding: 66px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 200px -1px;
 }
 
-aside.sidebar {
-    background-color: rgb(217, 78, 78);
-    border-radius: 90px;
-    /* background-image: url(images/color\ bricks.jpg); */
-    font-weight: 100;
+nav {
+    /* border-radius: 90px; */
     font-size: 30px;
-    color: #fff;
+    color: #0000EE;
     padding: 30px;
     min-width: 30%;
     height: 30px;
-    text-shadow: #070707 4px 4px;
-    text-align: center;
     font-weight: bold;
     font-family: Helvetica, Arial, Helvetica, sans-serif;
     margin-bottom: 25px;
     display: inline;
     flex-wrap: inherit;
+    flex-direction: column;
 }
 
-.sidebar ul {
-    list-style: none;
-    padding: 0;
+header nav {
+    width: 100%;
+    margin-right: 20px;
+    padding-top: 0px;
+    float: right;
 }
 
-.sidebar ul li {
-    margin-bottom: 10px;
+header nav ul li{
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-skip-ink: 3px;
+    display: inline-block;
+    margin-left: 25px;
 }
-    /* Look here to see all boxes */
-/* section, div{
-    border: solid;
-    border-color: #fff;
+
+/* About content styles */
+/* .about-content p {
+    color: white;
+    margin-left: 100px;
 } */
 
-.about-content p{
-    /* border: dashed; */
+/* .about-content h1{
     color: white;
-    /* display: inline; */
-    /* text-wrap: wrap; */
-    margin-left: 100px;
-    
-    
-}
-
-.about-content h1,h2{
-    /* display: inline; */
-    color: white;
-    font-size: 300%;
-    /* text-wrap: 100%; */
+    font-size: 100%;
     margin-top: 100px;
-    padding-bottom: 45px;
-    padding-right: 0px; /* Increase this value to move the border away from the text */
-    /* float: left; */
-}
-.about-content{
+    padding-right: 0px;
+    float: left;
+    margin: 150px;
+    font-size: 100%;
+} */
+
+/* .about-content {
     display: flex;
     flex-wrap: wrap;
+    flex: 0 0 50%;
+} */
+
+.page {
+    /* border: dashed white 2px; */
+    width: 100%;
+    height: 340px;
+    flex-wrap: wrap;
+    color: white;
+    height: 245px;
     
 }
 
-.about-content h1{
+
+#aboutme{
+    /* text-decoration: underline; */
+    font-size: 50px;
+    color: white;
+    border-bottom: solid;
+    width: 100%;
+    
+
+}
+
+#aboutpage{
+    padding-top: 15px;
+    flex-wrap: wrap;
+    display: block;
+    overflow-wrap: break-word;
+    flex-direction: column;
+    
+}
+
+
+.work{
+    height: 700px;
+    /* border: solid 1px white; */
+}
+#work{
+    font-size: 40px;
+    /* border-top: solid 1px; */
+    border-bottom: solid 2px white;
+    color: white;
+    
+}
+
+.mainbox{
+    
+    height: 300px;
+    margin: 12px 13px;
+    padding: 190px 17px;
+    background-image: url(images/gamepicture.webp);
+    background-size: cover;
+    width: 100%;
+    
+}
+
+.videogame{
+    height: 41px;
+    border: orange 2px solid;
+    width: 133px;
+    color: white;
+    padding: 0 0;
+    margin: -191px -17px;
+}
+.boxes{
+    
+    display: flex;
+    width: 100%; 
+    margin: 1px 12px;
+    padding: 22px 0;
+}
+
+.boxes2{
+    
+    display: flex;
+    width: 100%;
+    margin: -39px 9px;
+    padding: 0 0;
+
+}
+.crud{
+    height: 150px;
+    width: 100%;
+
+    flex-wrap: wrap;
+    margin: 0 0;
+    padding: 0 0;
+    background-image: url(images/crud.webp);
+    background-size: 100% 100%;
+
+}
+.bestdevices{
+    height: 150px;
+    width: 100%;
+
+    flex-wrap: wrap;
+    margin: 0 0;
+    padding: 0 0;
+    background-image: url(images/Best-Apple-Products-for-Students.avif);
+    background-size: 100% 100%;
+   
+
+}
+.gamingpro{
+    height: 150px;
+    width: 100%;
+
+    flex-wrap: wrap;
+    margin: 0 0;
+    padding: 0 0;
+    background-image: url(images/images.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+section article h1{
+    color: white;
+    font-size: 20px;
+    border: orange 2px solid;
+    width: 30%;
+    height: 50px;
+    background-color: black;
+
+}
+.stat{
+    height: 150;
+    width: 100%;
+
+    flex-wrap: wrap;
+    margin: 0 0;
+    padding: 0 0;
+    background-image: url(images/Shutterstock_1906898065.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+
+
+
+/* .about-content h1 {
     display: inline;
-    border-right: solid 2px;
-}
-.about-content h2{
-    
-    padding-top: 50px;
-    float: left;
-    padding-right: 10px;
-    margin-left: -64px;
-}
+    margin: 150px;
+    font-size: 100%;
+    text-decoration: underline;
+} */
 
-.about-image {
+
+/* .about-image {
     flex: 1;
     text-align: center;
 }
 
 .about-image img {
     max-width: 100%;
-}
+} */
 
 .image-resize {
     width: 25px;
     height: 25px;
 }
 
-.Chris {
+/* .Chris {
     width: 200px;
     height: 200px;
     float: left;
-}
-
-/* #content {
-    border: dashed;
-    margin: 50px;
-    padding-top: 10px;
 } */
 
-section ul li{
-    flex-wrap: wrap;
-}
+/* Footer styles */
+/* body {
+    margin: 0;
+    overflow-x: hidden;
+} */
 
-body{
-    margin:0;
-    overflow-x:hidden;
-}
-
-footer,#footer-contact,.footer,.row{
+#footer-contact, #footer, .row {
     background-color: #000007;
     width: 100%;
-    
 }
 
-
-
-footer {
+#footer-contact {
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px;
     font-size: 20px;
-    position: relative;
     bottom: 0;
-    height: 2.5rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
+    width: 100%;
+    margin: 0;
 }
 
-.footer .row{
-    width:100%;
-    margin:1% 0%;
-    padding:0.6% 0%;
-    color:gray;
-    font-size:0.8em;
-    }
-    
-    .footer .row a{
-    text-decoration:none;
-    color:gray;
-    transition:0.5s;
-    }
-    
-    .footer .row a:hover{
-    color:#fff;
-    }
-    
-    .footer .row ul{
-    width:100%;
-    }
-    
-    .footer .row ul li{
-    display:inline-block;
-    margin:0px 30px;
-    }
-    
-    .footer .row a i{
-    font-size:2em;
-    margin:0% 1%;
-    }
-    
-    @media (max-width:720px){
-    .footer{
-    text-align:left;
-    padding:5%;
-    }
-    .footer .row ul li{
-    display:block;
-    margin:10px 0px;
-    text-align:left;
-    }
-    .footer .row a i{
-    margin:0% 3%;
-    }
-
+#Contactme{
+    border-bottom: 2px white solid;
+    border-radius: 100px;
 }
 
-footer section h1{
-    color: red;
-    background-color: #000007;
+#footer-contact .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
 }
 
-
-/* Add margin to space the icons evenly */
-/* Style your social media icons (adjust as needed) */
-.footer-social-icons a {
+#footer-contact a {
     text-decoration: none;
     color: gray;
-    font-size: 1em;
-    margin: 30px 35px; /* Adjust this value to control the spacing between icons */
+    transition: 0.5s;
+    padding: 0px;
+    margin: 0 0.2rem 0.1rem;
+    background-size: 100% 0.2rem;
 }
 
-
-
-/* Hover effect (adjust as needed) */
-.footer-social-icons a:hover {
+#footer-contact .row a:hover {
     color: #fff;
 }
+
+#footer-contact .row ul {
+    width: 100%;
+}
+
+/* #footer-contact .row ul li {
+    display: inline-block;
+    margin: 0px 20px;
+} */
+
+/* #footer-contact .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+} */
+
+@media (max-width: 720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+    
+    .footer .row ul li {
+        display: block;
+        margin: 0px 0px;
+        text-align: left;
+    }
+    
+    .footer .row a i {
+        margin: 0% 3%;
+    }
+}
+
+/* @media (max-width: 767px) {                  
+    #aboutpage {
+       display: none;
+    }
+ } */
