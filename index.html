@@ -5,87 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
     <header>
-        <h1 id="chris">Christopher</h1>
-        <nav class="headernav">
-            <ul>
+        <div id="chris">
+        <h1>Christopher</h1>
+        <img src="./assets/images/me.jpg" style="width: 30%; height: auto;" alt="profilepic">
+         </div>    
+        <nav>
+            <ul class="headernav">   
                 <li><a href="#AboutMe">AboutMe</a></li>
                 <li><a href="#Work">Work</a></li>
-                 <li><a href="#footer-contact">Contact</a></li>
+                <li><a href="#footer-contact">Contact</a></li>
             </ul> 
         </nav>
     </header>
 
     <main>
         <section class="page">
-            <section>
-                    <h1 id="aboutme">About Me</h1> 
-            </section>    
-                    <div id="aboutpage">
+            <section class="page-section" id="about">
+                <h1 id="AboutMe">About Me</h1> 
+                <div>
                         <p>Lorem ipsum facilis beatae pariatur beatae pa Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem blanditiis ea a facilis, dolores saepe id libero, debitis maiores illum sapiente delectus, ipsam adipisci officia!quam eligendi culpa quasi rerum amet? Lorem ipsum dolor sit amet consectetur adipisicing elit.  molestiae pariatur molestiae id aliquam eligendi culpa quasi rerum amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam accusantium reiciendis eaque, ab labore cupidit</p>
                     </div>
-            </section>
-        <section>
-            <div id="work">
+            </section>    
+            <section class="page-section">
                 <h1>Work</h1>
-            </div>
+                <div class="flex-container">
+                        <a id="Work" class="flex-item video-game" href="https://github.com/Peaky00">
+                            <div >
+                                <h3>Video Game/h3>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Peaky00" class="flex-item crud-project">
+                            <div>
+                                <h3>Crud-Project</h3>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Peaky00" class="flex-item best-devices">
+                            <div>
+                                <h3>Apple Products<h3>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Peaky00" class="flex-item gaming-products">
+                            <div>
+                                <h3>Gaming Products</h3>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Peaky00" class="flex-item statistics">
+                            <div>
+                                <h3>Statistics</h3>
+                            </div>
+                        </a>
+                </div>
+            </section>
+            <section id="footer-contact" class="footer">
+                <address class="footer-social-icons">     
+                        <h1 id="Contactme">Contact Me</h1>
+                        <a href="https://www.yahoo.com">Email: Chris.Kirkley@yahoo.com</a>
+                    
+                        <a href="https://github.com/Peaky00"><img src="assets/images/github-mark-white.png" alt="GitHub Logo" class="image-resize"></a>
+                        <a href="https://twitter.com/home"><img src="assets/images/logo-twitter-png-40401.png" alt="Twitter Logo" class="image-resize"></a>
+                        <a href="https://www.facebook.com"><img src="assets/images/facebook.png" alt="Facebook" class="image-resize"></a>
+                    </address>
+                    <nav class="row">
+                        <ul>
+                            <a href="#">Contact us</a>
+                            <a href="#">Our Services</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms & Conditions</a>
+                            <a href="#">Career</a>
+                        </ul>
+                    </nav>
+                    <p>&copy; 2023 My Portfolio</p>
+            </section>
         </section>
-        <section class="mainbox" >
-            <section>
-                <article >
-                    <h1 class="videogame">VideoGame</h1>
-                </article>    
-            </section> 
-        </section>
-    <section class="boxes">
-        <section class="stat">
-            <article >
-                  <h1>StatPuller</h1>
-             </article>
-        </section>
-         <section class="crud">
-             <article>
-                  <h1>Crudprojects</h1>
-             </article>
-        </section>
-    </section>
-    <section class="boxes2">
-        <section class="bestdevices">
-             <article>
-                   <h1>BestDevices</h1>
-            </article>
-         </section>
-        <section class="gamingpro">
-            <article>
-                <h1>GamingProducts</h1>
-            </article>
-        </section>
-    </section>
             
     </main>
 
-    <section id="footer-contact" class="footer">
-        <address class="footer-social-icons">     
-                <h1 id="Contactme">Contact Me</h1>
-                <a href="https://www.yahoo.com">Email: Chris.Kirkley@yahoo.com</a>
-            
-                <a href="https://github.com/Peaky00"><img src="assets/images/github-mark-white.png" alt="GitHub Logo" class="image-resize"></a>
-                <a href="https://twitter.com/home"><img src="assets/images/logo-twitter-png-40401.png" alt="Twitter Logo" class="image-resize"></a>
-                <a href="https://www.facebook.com"><img src="assets/images/facebook.png" alt="Facebook" class="image-resize"></a>
-            </address>
-            <nav class="row">
-                <ul>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">Our Services</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Career</a></li>
-                </ul>
-            </nav>
-            <p>&copy; 2023 My Portfolio</p>
-    </section>
 </body>
 </html>
